@@ -4,6 +4,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import { ThemeProvider } from "@/context/ThemeProvider";
 // eslint-disable-next-line no-unused-vars
 const inter = Inter({
   subsets: ["latin"],
@@ -41,8 +42,7 @@ export default function RootLayout({
     >
       <html lang="en">
         <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
-          <h1 className="h1-bold">this is a sentence</h1>
-          {children}
+          <ThemeProvider>{children}</ThemeProvider>
         </body>
       </html>
     </ClerkProvider>
