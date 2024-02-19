@@ -8,18 +8,23 @@ Nextjs greatly improves the React development experience.
 
 It's really cool!
 
+**Implemented features**: multiple themes, mobile interface support, tag system, filter
+
+**Planned features**: Badge system, Integrating “Open AI” for automated answers, “Recommended Questions” algorithm
+### Stack
+
 **Built** with **NextJS** **NodeJS** **React** **MongoDB**
 
 **UI**: Shadcn
 
 **Authentication component**: Clerk
 
-**Editor component**: Tiny
+**User Editor component**: Tiny
 
-**Implemented features**: multiple themes, mobile interface support, tag system, filter
-
-**Planned features**: Badge system, Integrating “Open AI” for automated answers, “Recommended Questions” algorithm
 ### ShowCase
+
+
+
 
 ![image](https://github.com/Nilyang404/stack_overflow_replica_nextjs/assets/63556313/0a9bd85c-9eaf-4509-a42d-8c9df550909d)
 ![image](https://github.com/Nilyang404/stack_overflow_replica_nextjs/assets/63556313/9d6b4ffe-8a67-4f2e-8de2-7b746c5339fd)
