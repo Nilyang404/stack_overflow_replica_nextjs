@@ -9,6 +9,7 @@ Nextjs greatly improves the React development experience.
 It's really cool!
 
 [👉Demo Site](https://stack-overflow-replica-with-nextjs-1q1z5udlv-neil-caos-projects.vercel.app/)
+
 **Implemented features**: multiple themes, mobile interface support, tag system, filter
 
 **Planned features**: Badge system, Integrating “Open AI” for automated answers, “Recommended Questions” algorithm
