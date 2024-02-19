@@ -8,7 +8,7 @@ Nextjs greatly improves the React development experience.
 
 It's really cool!
 
-[👉Demo Site](https://stack-overflow-replica-with-nextjs-1q1z5udlv-neil-caos-projects.vercel.app/)
+[👉Demo Site](https://stack-overflow-replica-with-nextjs.vercel.app/) deployed on Vercel.
 
 **Implemented features**: multiple themes, mobile interface support, tag system, filter
 
