@@ -1,12 +1,12 @@
 # Stack OverFlow Replica
 
-Built with NextJS NodeJS React MongoDB
+**Built** with **NextJS** **NodeJS** **React** **MongoDB**
 
-UI:Shadcn
+**UI**: Shadcn
 
-Authentication component:Clerk
+**Authentication component**: Clerk
 
-Editer component:Tiny
+**Editor component**: Tiny
 
 
 ![image](https://github.com/Nilyang404/stack_overflow_replica_nextjs/assets/63556313/0a9bd85c-9eaf-4509-a42d-8c9df550909d)
