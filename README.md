@@ -13,7 +13,7 @@ It's really cool!
 **Planned features**: Badge system, Integrating “Open AI” for automated answers, “Recommended Questions” algorithm
 ### Stack
 
-**Built** with **NextJS** **NodeJS** **React** **MongoDB**
+**Built** with **NextJS** **NodeJS** **React** **Tailwind** **MongoDB**
 
 **UI**: Shadcn
 
