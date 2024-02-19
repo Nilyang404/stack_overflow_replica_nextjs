@@ -20,7 +20,7 @@ const Navbar = () => {
           <span className="text-primary-500">Overflow</span>
         </p>
       </Link>
-      GlobalSearch
+{/*       GlobalSearch */}
       <div className="flex-between gap-5">
         <Theme />
         <SignedIn>
