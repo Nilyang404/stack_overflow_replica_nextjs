@@ -1,12 +1,16 @@
+import Question from "@/components/forms/Question";
 import React from "react";
-import { auth } from "@clerk/nextjs";
-import { redirect } from "next/navigation";
 
-const Askquestion = () => {
-  const { userId } = auth();
+const Page = async () => {
+  return (
+    <div>
+      <h1 className="h1-bold text-dark100_light900">Ask a question</h1>
 
-  if (!userId) redirect("/sign-in");
-  return <div>Ask Question</div>;
+      <div className="mt-9">
+        <Question mongoUserId={"123"} />
+      </div>
+    </div>
+  );
 };
 
-export default Askquestion;
+export default Page;
