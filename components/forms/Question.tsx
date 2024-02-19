@@ -19,6 +19,7 @@ import { QuestionsSchema } from "@/lib/validations";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
 import { useTheme } from "@/context/ThemeProvider";
+import { createQuestion } from "@/lib/actions/question.action";
 
 interface Props {
   type?: string;
@@ -48,6 +49,9 @@ const Question = ({ type, questionDetails }: Props) => {
   // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof QuestionsSchema>) {
     setIsSubmitting(true);
+    try {
+      await createQuestion({});
+    } catch (error) {}
   }
 
   const handleInputKeyDown = (
