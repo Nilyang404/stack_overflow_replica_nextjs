@@ -1,6 +1,7 @@
 # Stack OverFlow Replica
 ### Description
 A full-stack project for practicing the new features of NextJS13&14, it's pretty COOOL!
+
 **Built** with **NextJS** **NodeJS** **React** **MongoDB**
 
 **UI**: Shadcn
