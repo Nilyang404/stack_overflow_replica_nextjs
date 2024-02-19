@@ -1,6 +1,8 @@
 # Stack OverFlow Replica
 ### Description
-A full-stack project for practicing the new features of NextJS13&14, it's pretty COOOL!
+A full-stack project for practicing the new features of NextJS13&14
+Nextjs greatly improves the React development experience.
+It's really cool!
 
 **Built** with **NextJS** **NodeJS** **React** **MongoDB**
 
