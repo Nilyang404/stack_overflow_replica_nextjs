@@ -6,21 +6,21 @@ import RenderTag from "./RenderTag";
 
 const RightSidebar = () => {
   const hotQuestions = [
-    { _id: 1, title: "How do I use express as a custom server in NextJS" },
-    { _id: 2, title: "How do I use express as a custom server in NextJS" },
-    { _id: 3, title: "How do I use express as a custom server in NextJS" },
-    { _id: 4, title: "How do I use express as a custom server in NextJS" },
-    { _id: 5, title: "How do I use express as a custom server in NextJS" },
-    { _id: 6, title: "How do I use express as a custom server in NextJS" },
+    { _id: "1", title: "How do I use express as a custom server in NextJS" },
+    { _id: "2", title: "How do I use express as a custom server in NextJS" },
+    { _id: "3", title: "How do I use express as a custom server in NextJS" },
+    { _id: "4", title: "How do I use express as a custom server in NextJS" },
+    { _id: "5", title: "How do I use express as a custom server in NextJS" },
+    { _id: "6", title: "How do I use express as a custom server in NextJS" },
   ];
 
   const popularTags = [
-    { _id: 1, name: "javascript", totalQuestions: 5 },
-    { _id: 2, name: "java", totalQuestions: 2 },
-    { _id: 3, name: "c++", totalQuestions: 10 },
-    { _id: 4, name: "Next.js", totalQuestions: 1 },
-    { _id: 5, name: "lua", totalQuestions: 7 },
-    { _id: 6, name: "c#", totalQuestions: 88 },
+    { _id: "1", name: "javascript", totalQuestions: 5 },
+    { _id: "2", name: "java", totalQuestions: 2 },
+    { _id: "3", name: "c++", totalQuestions: 10 },
+    { _id: "4", name: "Next.js", totalQuestions: 1 },
+    { _id: "5", name: "lua", totalQuestions: 7 },
+    { _id: "6", name: "c#", totalQuestions: 88 },
   ];
   return (
     <section

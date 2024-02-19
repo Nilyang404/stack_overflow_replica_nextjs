@@ -1,10 +1,80 @@
+import QuestionCard from "@/components/cards/QuestionCard";
 import HomeFilter from "@/components/home/HomeFilter";
 import Filter from "@/components/shared/Filter";
+import NoResult from "@/components/shared/NoResult";
 import LocalSearchbar from "@/components/shared/search/LocalSearchbar";
 import { Button } from "@/components/ui/button";
 import { HomePageFilters } from "@/constants/filters";
 import Link from "next/link";
 
+const questions = [
+  {
+    _id: "1",
+    title: "Cascading Deletes in SQL Alchemy",
+    tags: [
+      { _id: "1", name: "python" },
+      { _id: "2", name: "sql" },
+    ],
+    author: {
+      _id: "1",
+      name: "John Doe",
+      picture: "/assets/icons/avatar.svg",
+      clerkId: "clerk1234",
+    },
+    upvotes: ["u1", "u2", "u3"],
+    views: 100,
+    answers: [
+      {
+        authorId: "2",
+        text: "You need to use the cascade option.",
+        createdAt: new Date("2021-09-02T12:00:00Z"),
+      },
+    ],
+    createdAt: new Date("2021-09-01T12:00:00Z"),
+  },
+  {
+    _id: "2",
+    title: "How do you like SQL",
+    tags: [
+      { _id: "3", name: "database" },
+      { _id: "2", name: "sql" },
+    ],
+    author: {
+      _id: "2",
+      name: "Jane Doe",
+      picture: "/assets/icons/avatar.svg",
+      clerkId: null,
+    },
+    upvotes: ["u2", "u4", "u5"],
+    views: 150,
+    answers: [
+      {
+        authorId: "1",
+        text: "I find SQL to be very powerful.",
+        createdAt: new Date("2021-09-03T15:30:00Z"),
+      },
+    ],
+    createdAt: new Date("2021-09-01T15:00:00Z"),
+  },
+  {
+    _id: "3",
+    title: "Learn Python",
+    tags: [
+      { _id: "1", name: "python" },
+      { _id: "4", name: "programming" },
+    ],
+    author: {
+      _id: "3",
+      name: "Alice Smith",
+      picture: "/assets/icons/avatar.svg",
+      clerkId: "clerk5678",
+    },
+    upvotes: ["u1", "u6"],
+    views: 202222220,
+    answers: [],
+    createdAt: new Date("2021-09-02T10:20:00Z"),
+  },
+];
 export default function Home() {
   return (
     <>
@@ -30,6 +100,31 @@ export default function Home() {
         />
       </div>
       <HomeFilter />
+
+      <div className="mt-10 flex w-full flex-col gap-6">
+        {questions.length > 0 ? (
+          questions.map((question) => (
+            <QuestionCard
+              key={question._id}
+              _id={question._id}
+              title={question.title}
+              tags={question.tags}
+              author={question.author}
+              upvotes={question.upvotes}
+              views={question.views}
+              answers={question.answers}
+              createdAt={question.createdAt}
+            />
+          ))
+        ) : (
+          <NoResult
+            title="There’s no question to show"
+            description="Be the first to break the silence! 🚀 Ask a Question and kickstart the discussion. our query could be the next big thing others learn from. Get involved! 💡"
+            link="/ask-question"
+            linkTitle="Ask a Question"
+          />
+        )}
+      </div>
     </>
   );
 }

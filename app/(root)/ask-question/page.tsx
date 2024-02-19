@@ -1,12 +1,39 @@
+import Question from "@/components/forms/Question";
 import React from "react";
-import { auth } from "@clerk/nextjs";
-import { redirect } from "next/navigation";
+const { MongoClient, ServerApiVersion } = require("mongodb");
+const Page = async () => {
+  // Create a MongoClient with a MongoClientOptions object to set the Stable API version
+  const client = new MongoClient(process.env.MONGODB_URL, {
+    serverApi: {
+      version: ServerApiVersion.v1,
+      strict: true,
+      deprecationErrors: true,
+    },
+  });
+  async function run() {
+    try {
+      // Connect the client to the server	(optional starting in v4.7)
+      await client.connect();
+      // Send a ping to confirm a successful connection
+      await client.db("admin").command({ ping: 1 });
+      console.log(
+        "Pinged your deployment. You successfully connected to MongoDB!"
+      );
+    } finally {
+      // Ensures that the client will close when you finish/error
+      await client.close();
+    }
+  }
+  run().catch(console.dir);
+  return (
+    <div>
+      <h1 className="h1-bold text-dark100_light900">Ask a question</h1>
 
-const Askquestion = () => {
-  const { userId } = auth();
-
-  if (!userId) redirect("/sign-in");
-  return <div>Ask Question</div>;
+      <div className="mt-9">
+        <Question mongoUserId={"123"} />
+      </div>
+    </div>
+  );
 };
 
-export default Askquestion;
+export default Page;
