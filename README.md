@@ -1,4 +1,4 @@
-# 🚀Stack OverFlow Replica
+# 🚀Stack OverFlow Clone
 
 ### Description
 
