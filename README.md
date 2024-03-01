@@ -6,7 +6,7 @@ A full-stack project for practicing the new features of NextJS13&14
 
 Nextjs greatly improves the React development experience.
 
-It's really cool!
+It's really cool! 
 
 **Implemented features**: multiple themes, mobile interface support, tag system, filter
 
