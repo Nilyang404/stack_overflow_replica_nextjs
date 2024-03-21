@@ -17,7 +17,7 @@ It's really cool!
 
 **UI**: Shadcn
 
-**Authentication component**: Clerk
+**Authentication component**: Clerk 
 
 **User Editor component**: Tiny
 
